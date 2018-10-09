@@ -24,7 +24,7 @@ void draw()
 }
 class Walker
 {
-  int myX,myY,x,y;
+  int myX,myY;
   boolean life;
   Walker()
   {
