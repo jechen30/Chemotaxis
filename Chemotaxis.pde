@@ -19,7 +19,6 @@ void draw()
     fish[i].show();
     fish[i].walk();
   }
-  pen.ter();
   pen.show();
 }
 class Walker
@@ -56,17 +55,16 @@ class Walker
 class ter
 {
   int myX,myY;
+  ter()
   {
     myX=300;
     myY=300;
   }
-  void ter()
+  
+  void show()
   {
     myX= mouseX;
     myY=mouseY;
-  }
-  void show()
-  {
     fill(0);
     ellipse(myX,myY,100,100);
     fill(255);
