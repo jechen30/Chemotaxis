@@ -1,5 +1,5 @@
 Walker[] fish;
-Pointer pen;
+ter pen;
 void setup()
 {
   size(420,420);
@@ -8,7 +8,7 @@ void setup()
   {
     fish[i]=new Walker();
   }
-  pen= new Pointer();
+  pen= new ter();
 }
 
 void draw()
@@ -19,7 +19,7 @@ void draw()
     fish[i].show();
     fish[i].walk();
   }
-  pen.pointer();
+  pen.ter();
   pen.show();
 }
 class Walker
@@ -53,14 +53,14 @@ class Walker
   }
 }
 
-class Pointer
+class ter
 {
   int myX,myY;
   {
     myX=300;
     myY=300;
   }
-  void pointer()
+  void ter()
   {
     myX= mouseX;
     myY=mouseY;
